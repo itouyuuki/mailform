@@ -1,0 +1,21 @@
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+dd {
+    margin: 0;
+}
+
+
+
+/* ボタン */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+}

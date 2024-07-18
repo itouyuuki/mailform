@@ -1,0 +1,78 @@
+/* 『お問い合わせフォーム』 */
+#contactform div {
+    margin-top: 30px;
+}
+
+
+
+/* 小見出し */
+#contactform dt {
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+
+/* ラジオボタン */
+#contactform .radio input {
+    width: 16px;
+    margin: 0;
+}
+
+#contactform .radio dd {
+    text-align: left;
+}
+
+#contactform .radio p {
+    margin-left: 10%;
+}
+
+
+
+/* 入力欄（氏名等） */
+#contactform input,
+#contactform select {
+    width: 80%;
+}
+
+#contactform dd {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/* 入力欄（お問い合わせ内容） */
+#contactform textarea {
+    width: 80%;
+    height: 120px;
+}
+
+
+
+
+/* 必須、任意のテキスト */
+#contactform span {
+    color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    margin: 0 8px;
+    padding: 0 8px;
+}
+
+
+@media (min-width:768px) {
+    #contactform div {
+        display: flex;
+        width: 100%;
+    }
+
+    #contactform dt {
+        margin-top: 10px;
+        flex-basis: 40%;
+    }
+
+    #contactform dd {
+        flex-basis: 60%;
+    }
+}
