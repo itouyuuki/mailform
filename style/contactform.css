@@ -1,78 +1,110 @@
-/* 『お問い合わせフォーム』 */
-#contactform div {
-    margin-top: 30px;
+* {
+    box-sizing: border-box;
 }
 
-
-
-/* 小見出し */
-#contactform dt {
-    margin-left: 20px;
-    text-align: left;
-}
-
-
-
-/* ラジオボタン */
-#contactform .radio input {
-    width: 16px;
-    margin: 0;
-}
-
-#contactform .radio dd {
-    text-align: left;
-}
-
-#contactform .radio p {
-    margin-left: 10%;
-}
-
-
-
-/* 入力欄（氏名等） */
-#contactform input,
-#contactform select {
-    width: 80%;
-}
-
-#contactform dd {
-    margin-top: 10px;
+h2 {
+    font-size: 24px;
     text-align: center;
 }
 
+p {
+    margin: 0;
+}
 
+dd {
+    margin: 0;
+}
+
+/* ボタン */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+dl div {
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+/* 小見出し */
+dt {
+    text-align: left;
+    font-weight: 600;
+}
+
+/* ラジオボタン */
+dl .radio input,
+dl .checkbox input {
+    width: 16px;
+    height: auto;
+}
+
+dl .radio dd,
+dl .checkbox dd {
+    text-align: left;
+}
+
+dl .radio p,
+dl .checkbox p {
+    margin-left: 10%;
+}
+
+/* 入力欄（氏名等） */
+dl input,
+dl select {
+    width: 80%;
+    max-width: 300px;
+    height: 40px;
+}
+
+dl .radio input {
+    height: auto;
+}
+
+dd {
+    text-align: center;
+}
+
+#confirm dd {
+    text-align: left;
+    margin-left: 30px;
+}
 
 /* 入力欄（お問い合わせ内容） */
-#contactform textarea {
+dl textarea {
     width: 80%;
     height: 120px;
 }
 
-
-
-
 /* 必須、任意のテキスト */
-#contactform span {
+dl .l_required {
     color: red;
-    border: 1px solid red;
-    border-radius: 8px;
     margin: 0 8px;
     padding: 0 8px;
 }
 
+pre {
+    text-align: left; border: 1px solid black;
+    white-space: pre-wrap;
+}
 
-@media (min-width:768px) {
-    #contactform div {
+
+
+@media (min-width:600px) {
+    dl div {
         display: flex;
-        width: 100%;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: 30px auto;
     }
 
-    #contactform dt {
-        margin-top: 10px;
+    dt {
         flex-basis: 40%;
     }
 
-    #contactform dd {
+    dd {
         flex-basis: 60%;
     }
 }
+
